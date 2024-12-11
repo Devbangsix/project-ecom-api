@@ -94,7 +94,7 @@ exports.currentUser = async(req,res) => {
             }
         })
         // console.log(user)
-        res.send({user})
+        res.json({user})
     }catch(error){
         console.log('User error',error)
     }
